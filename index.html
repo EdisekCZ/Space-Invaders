@@ -5,22 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Space Invaders</title>
+    <title>Space shooter</title>
 </head>
 
 <body>
     <div class="obal">
         <header>
-            <h1>Space Invaders</h1>
+            <h1>Space shooter</h1>
         </header>
         <div class="obalvideohry">
-            <div class="videohra"></div>
-            <div class="vyhra">
-                <h1>You win!</h1>
-                <h2>Vyhráli jsi videohru.</h2>
-                <button class="btn" onclick="window.location.reload()">Restart</button>
-            </div>
-            <div class="prohra">
+            <canvas height="800px" width="500px" class="canvas"></canvas>
+            <div style="width: 150px;" ><h2 id="score" class="score">Score: </h2></div>
+            <div id="prohra" class="prohra">
                 <h1>Game over!</h1>
                 <h2>Prohrál jsi videohru.</h2>
                 <button class="btn" onclick="window.location.reload()">Restart</button>
@@ -28,10 +24,15 @@
         </div>
         <footer>
             <p>Šipky doleva/doprava - pohyb</p>
-            <p> Mezerník - střelba</p>
+            <p>Mezerník - střelba</p>
         </footer>
+        <img id="xwing" src="img/xwing2.png" alt="player" style="visibility: hidden;">
+        <img id="tie" src="img/tie.png" alt="enemy" style="visibility: hidden;">
+        <img id="laser" src="img/laser.png" alt="laser" style="visibility: hidden;">
+        <script src="js/js.js"></script>
     </div>
-    <script src="js.js"></script>
 </body>
+
+
 
 </html>
