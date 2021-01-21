@@ -125,7 +125,7 @@ let game = {
 }
 setInterval(function () {
   ties.push(new tie());
-},250)
+},650)
 
 function animate() {
   if (hra) {
